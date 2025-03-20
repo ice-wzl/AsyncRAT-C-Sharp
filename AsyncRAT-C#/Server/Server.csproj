@@ -114,12 +114,6 @@
     <Compile Include="Forms\FormCertificate.Designer.cs">
       <DependentUpon>FormCertificate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormChat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormChat.Designer.cs">
-      <DependentUpon>FormChat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormDOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,9 +276,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCertificate.resx">
       <DependentUpon>FormCertificate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormChat.resx">
-      <DependentUpon>FormChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDOS.resx">
       <DependentUpon>FormDOS.cs</DependentUpon>

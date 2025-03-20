@@ -940,35 +940,6 @@ namespace Server
         }
 
 
-
-        private void ChatToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                foreach (Clients client in GetSelectedClients())
-                {
-                    FormChat chat = (FormChat)Application.OpenForms["chat:" + client.ID];
-                    if (chat == null)
-                    {
-                        chat = new FormChat
-                        {
-                            Name = "chat:" + client.ID,
-                            Text = "chat:" + client.ID,
-                            F = this,
-                            ParentClient = client
-                        };
-                        chat.Show();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return;
-            }
-        }
-
-
         private void GetAdminPrivilegesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count > 0)
